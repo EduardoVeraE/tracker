@@ -1,0 +1,12 @@
+<html>
+<h1><%= link_to "Home", root_path %></h1>
+
+<ul>
+    <li><%= link_to "About us", root_path %></li>
+    <li><%= link_to "Features", features_path %></li>
+    <li><%= link_to "Contact us", { :controller=>"pages", :action=>"contact" } %></li>
+</ul>
+
+<%= yield %>
+
+</html>
